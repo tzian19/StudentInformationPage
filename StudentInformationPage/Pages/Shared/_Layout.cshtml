@@ -6,13 +6,13 @@
     <title>@ViewData["Title"] - Student Information Page</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/StudentInformationPage.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/StudentInformationPsage.styles.css" asp-append-version="true" />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
     <style>
         body {
-            background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(95, 26, 95, 1) 100%);
+            background: linear-gradient(160deg, rgba(0, 0, 0, 1) 0%, rgba(152,251,203) 100%);
             min-height: 100vh;
         }
 
@@ -123,7 +123,7 @@
             <div class="modal-content shadow-lg">
                 <div class="modal-header">
                     <h5 class="modal-title fw-semibold" id="logoutModalLabel">
-                        <i class="bi bi-exclamation-triangle me-2 text-warning"></i>Confirm Logout
+                        <i class="bi bi-exclamation-triangle me-2 text-warning" style="color:aquamarine !important"></i>Confirm Logout
                     </h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -134,7 +134,7 @@
                     <button type="button" class="btn btn-outline-dark btn-sm" style="padding: 0.5rem 1.2rem; border-radius:
 0.75rem;" data-bs-dismiss="modal">Cancel</button>
                     <form method="post" asp-page="/LogIn" class="d-inline">
-                        <button type="submit" class="btn btn-accent btn-sm">Yes, Logout</button>
+                        <button type="submit" class="btn btn-accent btn-sm" style="background-color: aqua">Yes, Logout</button>
                     </form>
                 </div>
             </div>

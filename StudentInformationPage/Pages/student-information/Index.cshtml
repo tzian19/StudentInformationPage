@@ -44,6 +44,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                   
                     @foreach (var item in Model.Student)
                     {
                         <tr>
@@ -59,13 +60,13 @@
                             <td>@Html.DisplayFor(modelItem => item.ContactNumber)</td>
                             <td>
                                 <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-sm glass-btn shadow-sm me-2" style="border-radius: .2rem;" title="Edit">
-                                    <i class="bi bi-pencil-square" style="color: #F7B731;"></i>
+                                    <i class="bi bi-pencil-square" style="color: white;"></i>
                                 </a>
                                 <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-sm glass-btn shadow-sm me-2" style="border-radius: .2rem;" title="Details">
-                                    <i class="bi bi-eye text-info" style="color: #5DADE2;"></i>
+                                    <i class="bi bi-eye text-info" style="color: white !important;"></i>
                                 </a>
                                 <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-sm glass-btn shadow-sm" style="border-radius: .2rem;" title="Delete">
-                                    <i class="bi bi-trash text-danger" style="color: #E63946;"></i>
+                                    <i class="bi bi-trash text-danger" style="color: white;"></i>
                                 </a>
                             </td>
                         </tr>

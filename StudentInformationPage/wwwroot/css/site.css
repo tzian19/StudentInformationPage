@@ -1,20 +1,20 @@
 ﻿html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #5fffd8; /* Mint focus */
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 .footer {
@@ -24,7 +24,7 @@ html {
 .glass-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 255, 255, 0.4); /* Mint glass effect */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -48,13 +48,13 @@ html {
     .glass-input:focus {
         background: rgba(255, 255, 255, 0.25) !important;
         border-color: rgba(255, 255, 255, 0.6) !important;
-        box-shadow: 0 0 0 0.25rem rgba(150, 75, 150, 0.35);
+        box-shadow: 0 0 0 0.25rem rgba(95, 255, 217, 0.35); /* Mint focus */
         color: #fff;
     }
 
 /* Button style */
 .glass-btn {
-    background: rgba(150, 75, 150, 0.7);
+    background: rgba(95, 255, 217, 0.7); /* Mint button */
     color: #fff;
     border: none;
     border-radius: 0.75rem;
@@ -63,9 +63,9 @@ html {
 }
 
     .glass-btn:hover {
-        background: rgba(150, 75, 150, 0.9);
+        background: rgba(95, 255, 217, 0.9); /* Mint hover */
         transform: translateY(-2px);
-        box-shadow: 0 6px 18px rgba(150, 75, 150, 0.4);
+        box-shadow: 0 6px 18px rgba(95, 255, 217, 0.4); /* Mint hover shadow */
     }
 
 .toast-container {
@@ -74,7 +74,7 @@ html {
 }
 
 .gold-gradient-text {
-    background: linear-gradient(90deg, #FFD700, #FFA500);
+    background: linear-gradient(90deg, #5fffd8, #00bfae); /* Mint gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -89,10 +89,10 @@ html {
 }
 
     .table.glass-table thead {
-        background: rgba(255, 215, 0, 0.15); /* subtle gold header */
-        color: #FFD700;
+        background: rgba(95, 255, 217, 0.15); /* subtle mint header */
+        color: #00bfae;
         font-weight: 600;
-        border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+        border-bottom: 2px solid rgba(95, 255, 217, 0.3);
     }
 
     .table.glass-table tbody tr {
@@ -101,8 +101,7 @@ html {
     }
 
         .table.glass-table tbody tr:hover {
-            background: rgba(150, 75, 150, 0.3); /* purple glass hover */
-
+            background: rgba(95, 255, 217, 0.3); /* Mint hover */
         }
 
     .table.glass-table td,
@@ -125,7 +124,21 @@ html {
         }
 
 #email_link > * {
-    color: #BB86FC;
+    color: #00bfae; /* Mint text */
+}
+
+.user-icon-container {
+    align-content: center;
+}
+
+img.user-icon-container {
+    border-radius: 50%;
+}
+
+img.user-icon {
+    padding: 10px;
+    mask-size: 50px;
+    border-radius: 50%;
 }
 
 select.glass-input {
@@ -141,37 +154,40 @@ select.glass-input {
 
     /* On focus (when active) */
     select.glass-input:focus {
-        background: rgba(187, 134, 252, 0.15); /* subtle tinted glow */
-        border-color: #BB86FC;
-        box-shadow: 0 0 8px rgba(187, 134, 252, 0.4);
+        background: rgba(95, 255, 217, 0.15); /* subtle mint glow */
+        border-color: #00bfae;
+        box-shadow: 0 0 8px rgba(95, 255, 217, 0.4);
         color: #fff;
     }
 
     /* For the dropdown options */
     select.glass-input option {
-        background: rgba(187, 134, 252, 0.15); /* translucent dark */
-        backdrop-filter: blur(6px); /* some browsers ignore this */
+        background: rgba(95, 255, 217, 0.15); /* translucent mint */
+        backdrop-filter: blur(6px);
         color: #fff;
         border: none;
     }
 
 .text-accent {
-    color: #BB86FC; /* matches your accent purple */
+    color: #00bfae; /* Mint accent color */
 }
+
 .detail-label {
     font-size: 0.85rem;
     color: #aaa;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
+
 .detail-value {
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
     margin: 0;
 }
+
 .btn-accent {
-    background-color: #BB86FC;
+    background-color: rgba(95, 255, 217, 0.9); /* Mint button */
     border: none;
     color: #fff;
     font-weight: 500;
@@ -181,7 +197,7 @@ select.glass-input {
 }
 
     .btn-accent:hover {
-        background-color: #9c66db;
+        background-color: #BFFFED; /* Darker mint on hover */
     }
 
 .btn-outline-light {
@@ -197,3 +213,46 @@ select.glass-input {
         background: rgba(255, 255, 255, 0.1);
         color: #fff;
     }
+
+/* ======================
+   FORM LIST STYLE
+   ====================== */
+.form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+    .form-item:last-child {
+        border-bottom: none;
+    }
+
+    .form-item label {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+.form-list .glass-input {
+    width: 100%;
+}
+
+.form-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+}

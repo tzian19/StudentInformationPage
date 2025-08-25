@@ -11,7 +11,7 @@
     <div class="card shadow-lg border-0 rounded-4 p-4"
          style="backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.08); color: #EDEDED; width: 100%; max-width: 600px;">
 
-        <h2 class="mb-3 text-center fw-bold" style="color: #BB86FC;">Create Student</h2>
+        <h2 class="mb-3 text-center fw-bold" style="color: #ADEBB3;">Create Student</h2>
         <p class="text-center mb-4 text-muted" style="font-size: 0.9rem; color: white;">
             Fill in the details below to register a new student
         </p>
@@ -19,76 +19,79 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger small"></div>
 
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <label asp-for="Student.FirstName" class="form-label"></label>
+            <form method="post" class="form-list">
+                <div asp-validation-summary="ModelOnly" class="text-danger small"></div>
+
+                <div class="col-12">
+                    <label asp-for="Student.FirstName"></label>
                     <input asp-for="Student.FirstName" class="form-control glass-input" />
                     <span asp-validation-for="Student.FirstName" class="text-danger small"></span>
                 </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Student.LastName" class="form-label"></label>
+                <div class="col-12">
+                    <label asp-for="Student.LastName"></label>
                     <input asp-for="Student.LastName" class="form-control glass-input" />
                     <span asp-validation-for="Student.LastName" class="text-danger small"></span>
                 </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Student.MiddleName" class="form-label"></label>
+                <div class="col-12">
+                    <label asp-for="Student.MiddleName"></label>
                     <input asp-for="Student.MiddleName" class="form-control glass-input" />
                     <span asp-validation-for="Student.MiddleName" class="text-danger small"></span>
                 </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Student.BirthDate" class="form-label"></label>
-                    <input asp-for="Student.BirthDate" class="form-control glass-input" type="date" id="birthDate" />
+                <div class="col-12">
+                    <label asp-for="Student.BirthDate"></label>
+                    <input asp-for="Student.BirthDate" type="date" id="birthDate" class="form-control glass-input" />
                     <span asp-validation-for="Student.BirthDate" class="text-danger small"></span>
                 </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Student.Age" class="form-label"></label>
-                    <input asp-for="Student.Age" class="form-control glass-input" id="ageField" readonly />
+                <div class="col-12">
+                    <label asp-for="Student.Age"></label>
+                    <input asp-for="Student.Age" id="ageField" readonly class="form-control glass-input" />
                     <span asp-validation-for="Student.Age" class="text-danger small"></span>
                 </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Student.Gender" class="form-label"></label>
+                <div class="col-12">
+                    <label asp-for="Student.Gender"></label>
                     <select asp-for="Student.Gender" class="form-control glass-input">
                         <option style="color: black;">Male</option>
-                        <option style ="color: black;">Female</option>
+                        <option style="color: black;">Female</option>
                         <option style="color: black;">Other</option>
                     </select>
                     <span asp-validation-for="Student.Gender" class="text-danger small"></span>
                 </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Student.Course" class="form-label"></label>
+                <div class="col-12">
+                    <label asp-for="Student.Course"></label>
                     <input asp-for="Student.Course" class="form-control glass-input" />
                     <span asp-validation-for="Student.Course" class="text-danger small"></span>
                 </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Student.YearLevel" class="form-label"></label>
+                <div class="col-12">
+                    <label asp-for="Student.YearLevel"></label>
                     <input asp-for="Student.YearLevel" class="form-control glass-input" />
                     <span asp-validation-for="Student.YearLevel" class="text-danger small"></span>
                 </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Student.Email" class="form-label"></label>
-                    <input asp-for="Student.Email" class="form-control glass-input" type="email" />
+                <div class="col-12">
+                    <label asp-for="Student.Email"></label>
+                    <input asp-for="Student.Email" type="email" class="form-control glass-input" />
                     <span asp-validation-for="Student.Email" class="text-danger small"></span>
                 </div>
 
-                <div class="col-md-6">
-                    <label asp-for="Student.ContactNumber" class="form-label"></label>
+                <div class="col-12">
+                    <label asp-for="Student.ContactNumber"></label>
                     <input asp-for="Student.ContactNumber" class="form-control glass-input" />
                     <span asp-validation-for="Student.ContactNumber" class="text-danger small"></span>
                 </div>
-            </div>
+            </form>
+
 
             <div class="d-flex justify-content-between align-items-center mt-4">
                 <a asp-page="./Index" class="btn btn-outline-light">Back</a>
                 <button type="submit" class="btn px-4 py-2 fw-bold"
-                        style="background-color: #BB86FC; border: none; color: white; border-radius: 8px;">
+                        style="background-color: #558B71; border: none; color: white; border-radius: 8px;">
                     Create
                 </button>
             </div>
@@ -126,8 +129,8 @@
 
         .glass-input:focus {
             outline: none;
-            border-color: #BB86FC !important;
-            box-shadow: 0 0 6px rgba(187, 134, 252, 0.6);
+            border-color: #5fffd9c9 !important;
+            box-shadow: 0 0 6px rgba(95, 255, 217, 0.4);
         }
 
     label {
