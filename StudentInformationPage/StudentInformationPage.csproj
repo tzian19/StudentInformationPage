@@ -7,6 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Images\character1.jpeg" />
+    <None Include="wwwroot\Images\character10.jfif" />
+    <None Include="wwwroot\Images\character11.jfif" />
+    <None Include="wwwroot\Images\character12.jfif" />
+    <None Include="wwwroot\Images\character13.jfif" />
+    <None Include="wwwroot\Images\character14.jfif" />
+    <None Include="wwwroot\Images\character15.jfif" />
+    <None Include="wwwroot\Images\character2.jfif" />
+    <None Include="wwwroot\Images\character3.jfif" />
+    <None Include="wwwroot\Images\character4.jfif" />
+    <None Include="wwwroot\Images\character5.jfif" />
+    <None Include="wwwroot\Images\character6.jfif" />
+    <None Include="wwwroot\Images\character7.jfif" />
+    <None Include="wwwroot\Images\character8.jfif" />
+    <None Include="wwwroot\Images\character9.jfif" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
       <PrivateAssets>all</PrivateAssets>
