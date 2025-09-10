@@ -1,0 +1,163 @@
+﻿/* CSS: .glass-mint form */
+:root {
+    --glass-bg: rgba(255,255,255,0.08);
+    --glass-border: rgba(255,255,255,0.18);
+    --accent: #6ee7c4; /* mint */
+    --accent-strong: #39d6a0;
+    --text: rgba(255,255,255,0.95);
+    --muted: rgba(255,255,255,0.75);
+    --shadow: 0 8px 30px rgba(8,10,15,0.45);
+    --radius: 14px;
+    --gap: 14px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* container */
+form.glass-mint {
+    width: min(520px, 94%);
+    margin: 28px auto;
+    padding: 26px;
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow);
+    color: var(--text);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+    /* header */
+    form.glass-mint h2 {
+        margin: 0 0 4px 0;
+        font-size: 1.35rem;
+        letter-spacing: -0.2px;
+        color: var(--text);
+    }
+
+    /* label & layout */
+    form.glass-mint label {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 0.95rem;
+        color: var(--muted);
+    }
+
+        /* small variant for checkboxes inline */
+        form.glass-mint label.row {
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+            form.glass-mint label.row.small {
+                font-size: 0.9rem;
+            }
+
+    /* inputs */
+    form.glass-mint input[type="text"],
+    form.glass-mint input[type="email"],
+    form.glass-mint input[type="password"],
+    form.glass-mint textarea,
+    form.glass-mint select {
+        padding: 12px 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.06);
+        background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+        color: var(--text);
+        outline: none;
+        font-size: 0.95rem;
+        transition: box-shadow .18s ease, border-color .18s ease, transform .12s ease;
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,0.12);
+    }
+
+    /* placeholder */
+    form.glass-mint input::placeholder {
+        color: rgba(255,255,255,0.38);
+    }
+
+    /* focus */
+    form.glass-mint input:focus,
+    form.glass-mint textarea:focus,
+    form.glass-mint select:focus {
+        border-color: color-mix(in srgb, var(--accent) 60%, white);
+        box-shadow: 0 6px 20px rgba(56,220,160,0.12), 0 0 0 4px rgba(54,214,160,0.06);
+        transform: translateY(-1px);
+    }
+
+    /* invalid */
+    form.glass-mint input:invalid {
+        border-color: rgba(255,100,100,0.9);
+        box-shadow: 0 6px 20px rgba(255,80,80,0.08);
+    }
+
+    /* checkbox */
+    form.glass-mint input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: var(--accent-strong);
+    }
+
+    /* actions */
+    form.glass-mint .actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 6px;
+        justify-content: flex-end;
+    }
+
+    /* buttons */
+    form.glass-mint button {
+        padding: 10px 16px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background: transparent;
+        color: var(--text);
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+    }
+
+        form.glass-mint button.primary {
+            background: linear-gradient(180deg, var(--accent), var(--accent-strong));
+            color: #022214;
+            box-shadow: 0 8px 24px rgba(38,178,133,0.18);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        form.glass-mint button.ghost {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.06);
+            color: var(--muted);
+        }
+
+        /* hover / active */
+        form.glass-mint button:hover {
+            transform: translateY(-2px);
+            opacity: 0.98;
+        }
+
+        form.glass-mint button:active {
+            transform: translateY(0);
+        }
+
+/* responsive */
+@media (max-width:420px) {
+    form.glass-mint {
+        padding: 18px;
+        gap: 10px;
+    }
+
+        form.glass-mint .actions {
+            flex-direction: column-reverse;
+            align-items: stretch;
+        }
+
+        form.glass-mint button {
+            width: 100%;
+        }
+}

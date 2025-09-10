@@ -4,6 +4,14 @@
     Layout = "~/Pages/Shared/_LogInLayout.cshtml";
 }
 
+<style>
+    .input-mint{
+        color:aqua !important;
+    }
+    .input-mint::placeholder{
+        color:aquamarine;
+    }
+</style>
 
 <div class="d-flex align-items-center justify-content-center vh-100"
      style="background: linear-gradient(170deg, rgba(0,0,0,1) 10%, rgba(152,251,203) 85%);">
@@ -19,7 +27,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
             <div class="form-floating mb-3">
-                <input asp-for="Credential.Username" class="form-control glass-input" placeholder="Username" />
+                <input asp-for="Credential.Username" class="form-control glass-input" placeholder="Username"/>
                 <label asp-for="Credential.Username" class="text-white-50"></label>
                 <span class="text-danger small" asp-validation-for="Credential.Username"></span>
             </div>

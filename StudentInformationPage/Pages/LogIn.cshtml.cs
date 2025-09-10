@@ -29,7 +29,7 @@ namespace StudentInformationPage.Pages
             }
             if(Credential.Username == "Admin" && Credential.Password == "admin123")
             {
-                return RedirectToPage("/student-information/Index");
+                return RedirectToPage("/account-data/Index");
 
             }
               LoginFailed = true; 

@@ -32,9 +32,9 @@ html {
 
 /* Input glass effect */
 .glass-input {
-    background: rgba(255, 255, 255, 0.15) !important;
+    background: rgba(152,251,203, 0.15) !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    color: #fff !important;
+    color: #BFFFED !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 0.75rem;
@@ -42,14 +42,14 @@ html {
 }
 
     .glass-input::placeholder {
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(152,251,203, 0.6);
     }
 
     .glass-input:focus {
         background: rgba(255, 255, 255, 0.25) !important;
         border-color: rgba(255, 255, 255, 0.6) !important;
         box-shadow: 0 0 0 0.25rem rgba(95, 255, 217, 0.35); /* Mint focus */
-        color: #fff;
+        color: #BFFFED;
     }
 
 /* Button style */
@@ -144,7 +144,7 @@ img.user-icon {
 select.glass-input {
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.25);
-    color: #fff;
+    color: #BFFFED;
     backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 8px;
@@ -157,14 +157,14 @@ select.glass-input {
         background: rgba(95, 255, 217, 0.15); /* subtle mint glow */
         border-color: #00bfae;
         box-shadow: 0 0 8px rgba(95, 255, 217, 0.4);
-        color: #fff;
+        color: #BFFFED;
     }
 
     /* For the dropdown options */
     select.glass-input option {
         background: rgba(95, 255, 217, 0.15); /* translucent mint */
         backdrop-filter: blur(6px);
-        color: #fff;
+        color: #BFFFED;
         border: none;
     }
 
