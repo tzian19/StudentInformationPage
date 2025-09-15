@@ -1,23 +1,43 @@
 ﻿@page
 @model StudentInformationPage.Pages.GenshinDripModel
 @{
+    ViewData [ "Title" ] = "Genshin Drip";
 }
 
-<div>
-    <div class="input-group mb-3">
-        <input type="text" id="searchInput" class="form-control" placeholder="Search Character" aria-label="Search Character" aria-describedby="button" />
-        <button class="btn glass-btn" type="button" onclick="searchBtn()">Search</button>
-    </div>
-
-    <div class="container">
-        <div class="row" id="genshinContainer">
+<div class="page-container">
+    <div class="search-bar glass-card">
+        <div class="input-group">
+            <input type="text" id="searchInput" class="form-control glass-input" placeholder="Search Character" aria-label="Search Character" aria-describedby="button" />
+            <button class="btn glass-btn" type="button" onclick="searchBtn()">Search</button>
         </div>
     </div>
 
-    <div id="msg" class="text-danger mt-3">
+    <div class="container mt-4">
+        <div class="row" id="genshinContainer">
+            <!-- Dynamic character cards will load here -->
+        </div>
+    </div>
+
+    <div id="msg" class="text-danger mt-3 text-center d-none">
         No characters found.
     </div>
 </div>
+
+<!-- Character Modal -->
+<div class="modal fade" id="charModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h5 class="modal-title text-accent" id="charModalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="charModalImg" src="" class="img-fluid rounded" alt="Character Image">
+            </div>
+        </div>
+    </div>
+</div>
+
 
 @section Scripts {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

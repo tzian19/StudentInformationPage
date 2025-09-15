@@ -29,13 +29,11 @@ function renderChars() {
 
     for (var i = 0; i < genshinChar.length; i++) {
         charsData +=
-            '<div class="col-4">' +
-            '<div class="card" style="margin-bottom:2rem; width:250px; background-color:#BADFDB;">' +
+            '<div class="col-6 col-md-4 col-lg-3 mb-4">' +
+            '<div class="genshin-card" onclick="openCharModal(\'' + genshinChar[i].ImageUrl + '\', \'' + genshinChar[i].Title + '\')">' +
             '<img src="' + genshinChar[i].ImageUrl + '" class="card-img" alt="' + genshinChar[i].Title + '">' +
-            '<div>' +
-            '<h5 class="card-title" style="text-align:center; padding:1rem; background-color:#BADFDB; box-shadow:0 .5rem 1rem rgba(0,0,0,.2); cursor:pointer;">'
-            + genshinChar[i].Title +
-            '</h5>' +
+            '<div class="card-body">' +
+            '<h5 class="card-title">' + genshinChar[i].Title + '</h5>' +
             '</div>' +
             '</div>' +
             '</div>';
@@ -43,6 +41,15 @@ function renderChars() {
 
     $("#genshinContainer").append(charsData);
 }
+
+function openCharModal(imgUrl, title) {
+    $("#charModalImg").attr("src", imgUrl);
+    $("#charModalTitle").text(title);
+    $("#charModal").modal("show");
+}
+
+
+
 
 function searchBtn() {
     var charsData = "";

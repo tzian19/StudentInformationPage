@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Student Information Page</title>
+    <title>@ViewData [ "Title" ] - Student Information Page</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/StudentInformationPsage.styles.css" asp-append-version="true" />
@@ -71,29 +71,43 @@
         main {
             flex: 1;
         }
+
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
     </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm shadow-sm">
             <div class="container">
+                <!-- Brand -->
                 <a class="navbar-brand fw-bold" asp-area="" asp-page="/student-information/Index">
                     Student Information Page
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                <!-- Burger icon (moved to the right) -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Collapsible Nav -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <!-- Left side nav -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/student-information/Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/HomePage">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-page="/student-information/Index">Student</a>
+                            <a class="nav-link" asp-area="" asp-page="/account-data/Index">Accounts</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-page="/GenshinDrip">Genshin</a>
@@ -113,6 +127,7 @@
             </div>
         </nav>
     </header>
+
 
     <div class="container">
         <main role="main" class="pb-3">
@@ -135,7 +150,9 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-dark btn-sm" style="padding: 0.5rem 1.2rem; border-radius:
-0.75rem;" data-bs-dismiss="modal">Cancel</button>
+0.75rem;" data-bs-dismiss="modal">
+                        Cancel
+                    </button>
                     <form method="post" asp-page="/LogIn" class="d-inline">
                         <button type="submit" class="btn btn-accent btn-sm" style="background-color: aqua">Yes, Logout</button>
                     </form>
@@ -148,6 +165,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync( "Scripts" , required: false )
 </body>
 </html>

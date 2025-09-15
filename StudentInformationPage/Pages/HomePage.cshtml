@@ -1,0 +1,135 @@
+﻿@page
+@model StudentInformationPage.Pages.GenshinDripModel
+@{
+    ViewData [ "Title" ] = "Genshin Impact NodKrai Update";
+}
+
+<div style="min-height:100vh; background:linear-gradient(135deg,#0f172a 0%, #1e293b 40%, #0f766e 100%); background-attachment:fixed; padding:2rem;">
+
+    <!-- Header -->
+    <div class="glass-card p-4 mb-4">
+        <h1 class="gold-gradient-text">Genshin Impact — NodKrai Update</h1>
+        <p class="text-accent">
+            NodKrai arrives as a harsh, beautiful frontier that reshapes the Traveler's path. Below is an
+            updated breakdown of the Archon Quest changes, region details, playable archetypes, and events.
+        </p>
+    </div>
+
+    <!-- Archon Quest — detailed lore update -->
+    <div class="glass-card p-4 mb-4">
+        <h2 class="text-accent">📖 Archon Quest — Updated Lore</h2>
+
+        <p>
+            The Archon Quest in NodKrai centers on a long-buried conflict between the wardens of the land and an
+            ancient device known as the <em>Hush Engine</em> — a relic that once regulated the balance of seasons and
+            leyflows across the region. Recent tremors reawaken long-dormant seals, drawing the Traveler into a story
+            of memory, consequence, and moral ambiguity.
+        </p>
+
+        <p>
+            Opening scenes reveal the Traveler arriving amid a power struggle: local clans seek control of the Hush
+            Engine's fragments, while a secretive order aims to re-bind the device to its original purpose. Central to the
+            chapter are several narrative beats:
+        </p>
+
+        <ul>
+            <li>
+                <strong>Lost Remembrance:</strong> the region's people carry fragmented memories of the Archon who once
+                stood as their protector. Recovering these memories unlocks side quests and hidden domains.
+            </li>
+            <li>
+                <strong>The Choice Dilemma:</strong> at a climactic point, players must choose whether to restore the Engine's
+                seals (stabilizing NodKrai but forfeiting a contested power) or to harness the Engine (granting potential power
+                with unpredictable environmental consequences).
+            </li>
+            <li>
+                <strong>Long-term Consequences:</strong> the decision influences NPC allegiances, future world-state changes,
+                and certain domain mechanics — giving this Archon Quest a persistent effect on the region.
+            </li>
+        </ul>
+
+        <p>
+            Mechanically, expect environmental mechanics that tie into the lore: localized weather phases that affect combat,
+            new elemental interactions tied to relic attunement, and puzzles that require altering the Hush Engine’s resonance.
+        </p>
+    </div>
+
+    <!-- Region / World details -->
+    <div class="glass-card p-4 mb-4">
+        <h2 class="text-accent">🌍 Region — NodKrai Overview</h2>
+        <p>
+            NodKrai is dominated by glacial plateaus, subterranean warm caverns, and relic-strewn ruins. Exploration will
+            demand resource management and adaptability — some zones push survival mechanics (cold exposure, shifting
+            visibility), while others reward careful puzzle solving tied to the Engine’s attunement.
+        </p>
+    </div>
+
+    <!-- Characters — archetypes (no inaccurate names) -->
+    <div class="glass-card p-4 mb-4">
+        <h2 class="text-accent">⚔️ Playable Archetypes & Roles (placeholders)</h2>
+
+        <div class="form-list">
+            <div class="form-item">
+                <label class="detail-label">Cryo Catalyst — Role</label>
+                <p class="detail-value">
+                    Field-control & support — excels at freezing sections of a battlefield,
+                    enabling environmental synergies and puzzle interactions related to frost.
+                </p>
+            </div>
+
+            <div class="form-item">
+                <label class="detail-label">Anemo Polearm — Role</label>
+                <p class="detail-value">
+                    Swift disruption & mobility — strong at crowd control, traversal bonuses, and
+                    enabling elemental swirl combos in the harsh winds of NodKrai.
+                </p>
+            </div>
+
+            <div class="form-item">
+                <label class="detail-label">Geo Claymore — Role</label>
+                <p class="detail-value">
+                    Frontline & construct support — durable fighter that can create local constructs
+                    tied to relic attunement and shield allies from environmental hazards.
+                </p>
+            </div>
+
+            <div class="form-item">
+                <label class="detail-label">Note</label>
+                <p class="detail-value">
+                    Canonical character names were removed to avoid inaccuracies. Replace these
+                    archetypes with the exact character names you prefer (I can insert them verbatim without research).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events & Rewards -->
+    <div class="glass-card p-4 mb-4">
+        <h2 class="text-accent">🎉 Events & Rewards</h2>
+        <p>
+            Expect layered events: a narrative-limited event tied to the Archon Quest decisions, rotating domain challenges
+            with nods to the Hush Engine, and reward tracks that include ascension materials themed for NodKrai's unique
+            ecology.
+        </p>
+    </div>
+
+    <!-- Subscription / Feedback -->
+    <div class="glass-card p-4">
+        <h2 class="text-accent">Stay Informed / Give Feedback</h2>
+        <div class="form-list">
+            <div class="form-item">
+                <label>Email Address</label>
+                <input type="email" class="glass-input" placeholder="Enter your email" />
+            </div>
+            <div class="form-item">
+                <label>Your Notes (optional)</label>
+                <textarea rows="3" class="glass-input" placeholder="If you have canonical names or corrections, paste them here"></textarea>
+            </div>
+            <div class="form-actions">
+                <button class="btn-accent">Subscribe</button>
+                <button class="btn-outline-light" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+
+</div>
