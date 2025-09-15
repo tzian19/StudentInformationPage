@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using StudentInformationPage.Data;
 using StudentInformationPage.Models;
 
-namespace StudentInformationPage.Pages.student_information
+namespace StudentInformationPage.Pages.account_data
 {
     public class CreateModel : PageModel
     {
